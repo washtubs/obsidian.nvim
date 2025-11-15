@@ -7,6 +7,7 @@ local command_lookups = {
   ObsidianToday = "obsidian.commands.today",
   ObsidianYesterday = "obsidian.commands.yesterday",
   ObsidianTomorrow = "obsidian.commands.tomorrow",
+  ObsidianWeek = "obsidian.commands.week",
   ObsidianDailies = "obsidian.commands.dailies",
   ObsidianNew = "obsidian.commands.new",
   ObsidianOpen = "obsidian.commands.open",
@@ -131,6 +132,8 @@ end
 M.register("ObsidianCheck", { opts = { nargs = 0, desc = "Check for issues in your vault" } })
 
 M.register("ObsidianToday", { opts = { nargs = "?", desc = "Open today's daily note" } })
+
+M.register("ObsidianWeek", { opts = { nargs = 0, desc = "Open the current week's note" } })
 
 M.register("ObsidianYesterday", { opts = { nargs = 0, desc = "Open the daily note for the previous working day" } })
 
